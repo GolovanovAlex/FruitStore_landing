@@ -1,0 +1,215 @@
+// ---- ---- colors ---- ---- //
+$color-white: #ffffff;
+$color-button: #fdb827;
+$color-header: #233506;
+$color-title: #02283f;
+$color-text: #5f6672;
+$color-section: #fff9f2;
+$color-btn: #ff800b;
+
+// ---- ---- fonts ---- ---- //
+@import 'fonts.scss';
+
+// ---- ---- reset ---- ---- //
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+// ---- ---- *** ---- ---- //
+body {
+  // font-family: 'Gilroy';
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%;
+  color: $color-text;
+  background-color: #efefef;
+}
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+// ---- ---- main ---- ---- //
+
+.menu {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    & + & {
+      margin-left: 46px;
+    }
+  }
+  &__link {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $color-header;
+    transition: all 0.3s;
+    &:hover {
+      color: $color-btn;
+    }
+  }
+}
+
+.header {
+  position: relative;
+  min-height: 1020px;
+  background: linear-gradient(to right, #fff9f2 66.3%, #fdb827 66.3%);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+  }
+  &__logo-text {
+    font-family: 'Gilroy';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    color: $color-header;
+    span {
+      color: $color-btn;
+    }
+  }
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__contact {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: $color-btn;
+    background-color: $color-white;
+    border-radius: 22.5px;
+    padding: 15px 24px 14px 23px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: $color-btn;
+      color: $color-white;
+    }
+  }
+  &__cart {
+    width: 51px;
+    height: 51px;
+    background-color: $color-white;
+    border-radius: 15px;
+    margin-left: 13px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: $color-btn;
+      path {
+        stroke: $color-white;
+      }
+    }
+  }
+  &__search {
+    width: 51px;
+    height: 51px;
+    background-color: $color-white;
+    border-radius: 15px;
+    margin-left: 13px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: $color-btn;
+      path {
+        fill: $color-white;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    max-width: 595px;
+    font-family: 'Gilroy';
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 120%;
+    color: $color-header;
+    margin: 200px 0 50px;
+    span {
+      color: $color-button;
+    }
+  }
+  &__text {
+    max-width: 480px;
+    color: rgba(35, 53, 6, 0.65);
+    margin-bottom: 40px;
+  }
+  &__btn {
+    position: relative;
+    display: block;
+    width: 210px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    color: $color-white;
+    background-color: $color-button;
+    border: 2px solid $color-button;
+    border-radius: 33px;
+    padding: 24px 41px;
+    transition: all 0.4s;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 26px;
+      right: 41px;
+      background-image: url(../images/icon/arrow_btn.svg);
+      width: 20px;
+      height: 13px;
+    }
+    &:hover {
+      background-color: $color-white;
+      color: $color-button;
+      border: 2px solid $color-button;
+      text-align: center;
+      font-size: 18px;
+      line-height: 18px;
+      &::after {
+        content: '';
+        background-image: none;
+      }
+    }
+  }
+  &__img-box {
+    position: absolute;
+    background-image: url(../images/content/bg-header.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 122px;
+    right: 100px;
+    width: 870px;
+    height: 900px;
+  }
+}
+// ---- ---- *** ---- ---- //
+// ---- ---- *** ---- ---- //
+// ---- ---- *** ---- ---- //
