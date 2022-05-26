@@ -243,13 +243,8 @@ body {
   content: "";
   background-image: none;
 }
-.header__img-box {
-  position: absolute;
-  background-image: url(../images/content/bg-header.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  top: 122px;
-  right: 100px;
-  width: 870px;
-  height: 900px;
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

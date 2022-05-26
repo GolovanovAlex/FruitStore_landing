@@ -199,15 +199,18 @@ body {
       }
     }
   }
+  &__box {
+    display: flex;
+  }
   &__img-box {
-    position: absolute;
-    background-image: url(../images/content/bg-header.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 122px;
-    right: 100px;
-    width: 870px;
-    height: 900px;
+    // position: absolute;
+    // background-image: url(../images/content/bg-header.webp);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // top: 122px;
+    // right: 100px;
+    // width: 870px;
+    // height: 900px;
   }
 }
 // ---- ---- *** ---- ---- //
