@@ -48,6 +48,7 @@ body {
 // ---- ---- main ---- ---- //
 
 .menu {
+  margin-left: 170px;
   &__items {
     display: flex;
     justify-content: space-between;
@@ -73,9 +74,23 @@ body {
 
 .header {
   position: relative;
-  min-height: 1020px;
+  min-height: 100vh;
   background: linear-gradient(to right, #fff9f2 66.3%, #fdb827 66.3%);
 
+  &__img-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 33.5%;
+  }
+  &__img {
+    position: absolute;
+    top: 130px;
+    right: 18%;
+    width: 122%;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
@@ -199,20 +214,8 @@ body {
       }
     }
   }
-  &__box {
-    display: flex;
-  }
-  &__img-box {
-    // position: absolute;
-    // background-image: url(../images/content/bg-header.webp);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // top: 122px;
-    // right: 100px;
-    // width: 870px;
-    // height: 900px;
-  }
 }
+
 // ---- ---- *** ---- ---- //
 // ---- ---- *** ---- ---- //
 // ---- ---- *** ---- ---- //
