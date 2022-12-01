@@ -1,5 +1,7 @@
 # FruitStore landing
 
+![underconstract](readme/underconstruction.gif)
+
 ### Use Skills
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -13,11 +15,7 @@
 
 ---
 
-<!--[Demo Link <br>![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://golovanovalex.github.io/Lamborghini_landing/)-->
-
 ## Info
-
-![underconstract](readme/inderconstraction.gif)
 
 <!--
 ![Gifweb](readme/gifweb.webp) -->
