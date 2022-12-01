@@ -1,4 +1,17 @@
-// ---- ---- colors ---- ---- //
+// ---- ---- reset ---- ---- //
+//@import 'slick.scss';
+//@import 'jquery.fancybox.scss';
+@import 'normalize.scss';
+@import 'myreset.scss';
+@import 'global.scss';
+
+// ---- ---- main ---- ---- //
+
+// ---- ---- media ---- ---- //
+@import 'media.scss';
+
+// ---- ---- OLD CODE ---- ---- //
+/*// ---- ---- colors ---- ---- //
 $color-white: #ffffff;
 $color-button: #fdb827;
 $color-header: #233506;
@@ -215,7 +228,4 @@ body {
     }
   }
 }
-
-// ---- ---- *** ---- ---- //
-// ---- ---- *** ---- ---- //
-// ---- ---- *** ---- ---- //
+*/
